@@ -53,7 +53,8 @@ app.use(flash());
 //setup routes for which the server Is listening
 app.use("/", mainRoutes);
 app.use("/post", postRoutes);
-
+app.use("/todos", todoRoutes);
+app.use("/budget", budgetRoutes);
 //server runnig
 
 app.listen(process.env.PORT, () => {
